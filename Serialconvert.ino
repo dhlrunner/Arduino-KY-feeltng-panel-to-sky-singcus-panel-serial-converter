@@ -3,9 +3,9 @@
 byte feeltngpacket[FEELTNG_PANEL_BYTE_SIZE] = {0}; 
 byte skypacket[SKY_PANEL_BYTE_SIZE] = {0};
 void setup() {
-  Serial.begin(38400);
-  Serial1.begin(38400);
-  Serial2.begin(19200);
+  Serial.begin(38400); //for debug purpose
+  Serial1.begin(38400); //from 300L mainboard
+  Serial2.begin(19200); //to singcus panel
 }
 
 void loop() {
